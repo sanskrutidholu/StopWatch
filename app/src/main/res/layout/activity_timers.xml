@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".timers.TimersActivity"
+    android:background="#2E2E2E">
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="25dp"
+        android:padding="5dp"
+        android:layout_marginStart="20dp"
+        android:weightSum="2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Time"
+            android:textColor="@color/white"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:id="@+id/edit_text_input"
+            android:layout_width="148dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:hint="Minutes"
+            android:inputType="number"
+            android:gravity="center"
+            android:maxLength="4"
+            android:textColor="@color/yellow"
+            android:textColorHint="#976C2E"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_set"
+        android:layout_width="143dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout1"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="190dp"
+        android:padding="5dp"
+        android:backgroundTint="@color/yellow"
+        android:textColor="@color/black"
+        android:text="Set Time" />
+
+    <TextView
+        android:id="@+id/text_view_countdown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="00:00"
+        android:layout_centerInParent="true"
+        android:textColor="@color/white"
+        android:textColorHint="#BFBBBB"
+        android:textSize="60sp" />
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:padding="5dp"
+        android:gravity="center"
+        android:weightSum="3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/text_view_countdown">
+
+        <Button
+            android:id="@+id/button_start"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/yellow"
+            android:textColor="@color/black"
+            android:text="Start" />
+
+        <Button
+            android:id="@+id/button_pause"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Pause"
+            android:layout_marginStart="15dp"
+            android:backgroundTint="@color/yellow"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/button_reset"
+            android:layout_width="100dp"
+            android:layout_marginStart="15dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/yellow"
+            android:textColor="@color/black"
+            android:text="Reset" />
+
+    </LinearLayout>
+
+</RelativeLayout>

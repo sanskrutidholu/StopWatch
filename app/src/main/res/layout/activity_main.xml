@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10sp"
+    android:weightSum="5"
+    android:orientation="vertical"
+    android:background="#2E2E2E"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="Welcome To Time - Watcher"
+        android:textStyle="italic"
+        android:textSize="25sp"
+        android:textColor="@color/white"/>
+
+    <ImageButton
+        android:id="@+id/btnstopwatch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/stopwatch"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="STOPWATCH"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:textColor="@color/green"/>
+
+    <ImageButton
+        android:id="@+id/btntimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/timer"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="TIMER"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/yellow"/>
+
+</LinearLayout>
