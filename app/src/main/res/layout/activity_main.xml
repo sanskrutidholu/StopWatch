@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:padding="10sp"
     android:weightSum="5"
+    android:gravity="center"
     android:orientation="vertical"
     android:background="#2E2E2E"
     tools:context=".MainActivity">
@@ -13,19 +14,19 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
         android:gravity="center"
-        android:layout_marginTop="20dp"
         android:text="Welcome To Time - Watcher"
-        android:textStyle="italic"
-        android:textSize="25sp"
-        android:textColor="@color/white"/>
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="italic" />
 
     <ImageButton
         android:id="@+id/btnstopwatch"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="40dp"
         android:src="@drawable/stopwatch"/>
 
     <TextView
@@ -50,6 +51,7 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="TIMER"
+        android:layout_marginTop="20dp"
         android:textSize="25sp"
         android:textStyle="bold"
         android:textColor="@color/yellow"/>
